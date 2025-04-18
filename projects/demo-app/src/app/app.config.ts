@@ -3,7 +3,7 @@ import { provideRouter } from '@angular/router';
 import { provideAnimations } from '@angular/platform-browser/animations';
 import { MAT_DATE_FORMATS } from '@angular/material/core';
 
-import { provideSpacetimeAdapter, SPACETIME_DATE_FORMATS, SPACETIME_TIMEZONE } from 'spacetime-adapter'; // Use path mapping
+import { provideSpacetimeAdapter, SPACETIME_DATE_FORMATS, SPACETIME_TIMEZONE } from '@devlaps/spacetime-adapter'; // Use path mapping
 
 import { routes } from './app.routes';
 

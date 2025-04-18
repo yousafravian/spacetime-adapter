@@ -38,6 +38,9 @@ importers:
       '@angular/router':
         specifier: ^19.0.0
         version: 19.2.7(@angular/common@19.2.7(@angular/core@19.2.7(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@19.2.7(rxjs@7.8.2)(zone.js@0.15.0))(@angular/platform-browser@19.2.7(@angular/animations@19.2.7(@angular/common@19.2.7(@angular/core@19.2.7(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@19.2.7(rxjs@7.8.2)(zone.js@0.15.0)))(@angular/common@19.2.7(@angular/core@19.2.7(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@19.2.7(rxjs@7.8.2)(zone.js@0.15.0)))(rxjs@7.8.2)
+      '@devlaps/spacetime-adapter':
+        specifier: ^0.1.0
+        version: 0.1.0(@angular/cdk@19.2.10(@angular/common@19.2.7(@angular/core@19.2.7(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@19.2.7(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/common@19.2.7(@angular/core@19.2.7(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@19.2.7(rxjs@7.8.2)(zone.js@0.15.0))(@angular/material@19.2.10(ee90ada143a144cbb49c62265aea57df))(spacetime@7.9.0)
       rxjs:
         specifier: ~7.8.0
         version: 7.8.2
@@ -797,6 +800,15 @@ packages:
   '@colors/colors@1.5.0':
     resolution: {integrity: sha512-ooWCrlZP11i8GImSjTHYHLkvFDP48nS4+204nGb1RiX/WXYHmJA2III9/e2DWVabCESdW7hBAEzHRqUn9OUVvQ==}
     engines: {node: '>=0.1.90'}
+
+  '@devlaps/spacetime-adapter@0.1.0':
+    resolution: {integrity: sha512-9wG791SRN7CPWpX12U1J+4C59kkyAr5PyGzQ9Ys4Dbw2HuUECbBDdzkOV5N6X0co12UhYY4mda/Rl4Z7XtxnyA==}
+    peerDependencies:
+      '@angular/cdk': ^18.0.0 || ^19.0.0
+      '@angular/common': ^18.0.0 || ^19.0.0
+      '@angular/core': ^18.0.0 || ^19.0.0
+      '@angular/material': ^18.0.0 || ^19.0.0
+      spacetime: ^7.9.0
 
   '@discoveryjs/json-ext@0.6.3':
     resolution: {integrity: sha512-4B4OijXeVNOPZlYA2oEwWOTkzyltLao+xbotHQeqN++Rv27Y6s818+n2Qkp8q+Fxhn0t/5lA5X1Mxktud8eayQ==}
@@ -5579,6 +5591,15 @@ snapshots:
       '@babel/helper-validator-identifier': 7.25.9
 
   '@colors/colors@1.5.0': {}
+
+  '@devlaps/spacetime-adapter@0.1.0(@angular/cdk@19.2.10(@angular/common@19.2.7(@angular/core@19.2.7(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@19.2.7(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/common@19.2.7(@angular/core@19.2.7(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@19.2.7(rxjs@7.8.2)(zone.js@0.15.0))(@angular/material@19.2.10(ee90ada143a144cbb49c62265aea57df))(spacetime@7.9.0)':
+    dependencies:
+      '@angular/cdk': 19.2.10(@angular/common@19.2.7(@angular/core@19.2.7(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@19.2.7(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2)
+      '@angular/common': 19.2.7(@angular/core@19.2.7(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2)
+      '@angular/core': 19.2.7(rxjs@7.8.2)(zone.js@0.15.0)
+      '@angular/material': 19.2.10(ee90ada143a144cbb49c62265aea57df)
+      spacetime: 7.9.0
+      tslib: 2.8.1
 
   '@discoveryjs/json-ext@0.6.3': {}
 
