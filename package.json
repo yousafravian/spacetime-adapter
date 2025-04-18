@@ -8,7 +8,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "build:lib": "ng build spacetime-adapter",
-    "start:demo": "ng serve demo-app"
+    "start:demo": "ng serve demo-app",
+    "publish:lib": "pnpm build:lib && cd dist/spacetime-adapter && npm publish --access public"
   },
   "private": true,
   "dependencies": {
