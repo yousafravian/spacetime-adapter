@@ -1,0 +1,6 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "angular",
+  "buildCommand": "pnpm build:lib && ng build demo-app --configuration production",
+  "outputDirectory": "dist/demo-app/browser"
+} 

@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build:demo": "ng build demo-app --configuration production",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "build:lib": "ng build spacetime-adapter",
