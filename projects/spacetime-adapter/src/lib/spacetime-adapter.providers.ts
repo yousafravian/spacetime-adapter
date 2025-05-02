@@ -1,7 +1,9 @@
 import { EnvironmentProviders, makeEnvironmentProviders, Signal, signal } from '@angular/core';
-import { DateAdapter } from '@angular/material/core';
+import { DateAdapter, MAT_DATE_FORMATS } from '@angular/material/core';
+
 import { SpacetimeAdapter } from './spacetime.adapter';
 import { SPACETIME_TIMEZONE } from './spacetime.token';
+import { SPACETIME_DATE_FORMATS } from './spacetime-formats';
 
 /**
  * Provides the SpacetimeAdapter and configures the default timezone signal.
@@ -22,6 +24,10 @@ export function provideSpacetimeAdapter(
     {
       provide: DateAdapter,
       useClass: SpacetimeAdapter,
+    },
+    {
+      provide: MAT_DATE_FORMATS,
+      useValue: SPACETIME_DATE_FORMATS,
     },
     {
       provide: SPACETIME_TIMEZONE,

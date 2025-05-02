@@ -238,6 +238,14 @@
       <mat-datepicker #picker></mat-datepicker>
     </mat-form-field>
 
+    <!-- Timepicker -->
+    <mat-form-field>
+      <mat-label>Pick a time</mat-label>
+      <input matInput [matTimepicker]="timePicker" [formControl]="timeControl">
+      <mat-timepicker-toggle matIconSuffix [for]="timePicker"></mat-timepicker-toggle>
+      <mat-timepicker #timePicker/>
+    </mat-form-field>
+
   </section>
 
   <section class="output">
@@ -259,5 +267,10 @@
       <strong>Selected Date (Formatted ISO in UTC):</strong>
     </p>
     <pre>{{ dateControl.value ? dateControl.value.goto('UTC').format('iso') : 'No date selected' }}</pre>
+
+    <p>
+      <strong>Selected Time:</strong>
+    </p>
+    <pre>{{ timeControl.value ? timeControl.value.iso() : 'No time selected' }}</pre>
   </section>
 </div>

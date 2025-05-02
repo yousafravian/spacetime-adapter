@@ -4,8 +4,10 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
+import { MatIconModule } from '@angular/material/icon';
 import { Spacetime } from 'spacetime';
 import { CommonModule, JsonPipe } from '@angular/common';
+import { MatTimepickerModule } from '@angular/material/timepicker';
 
 import { appTimezoneSignal } from '../app/app.config'; // Import the shared signal
 
@@ -20,7 +22,9 @@ import { appTimezoneSignal } from '../app/app.config'; // Import the shared sign
     MatInputModule,
     MatDatepickerModule,
     MatSelectModule,
-    JsonPipe
+    JsonPipe,
+    MatTimepickerModule,
+    MatIconModule
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
@@ -31,6 +35,7 @@ export class AppComponent {
 
   // Date control for the datepicker
   dateControl = new FormControl<Spacetime | null>(null);
+  timeControl = new FormControl<Spacetime | null>(null);
 
   // List of example timezones for the dropdown
   availableTimezones: string[] = [
