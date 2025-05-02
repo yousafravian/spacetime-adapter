@@ -285,7 +285,7 @@ export class SpacetimeAdapter extends DateAdapter<Spacetime> {
    * @returns A new Spacetime object with the updated time.
    */
   override setTime( target: Spacetime, hours: number, minutes: number, seconds: number ): Spacetime {
-    return target.hour( hours ).minute( minutes ).second( seconds );
+    return target.timezone( this.timezone() ).hour( hours ).minute( minutes ).second( seconds );
   }
 
   /**
